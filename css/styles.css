@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+
+/* Custom Properties */
+:root{
+    font-size: 20px;
+    --blue: hsl(223, 87%, 63%);
+    --plaeBlue: hsl(223, 100%, 88%);
+    --lightRed: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --veryDarkBlue: hsl(209, 33%, 12%);
+}
+/* Utilities */
+
+.flex{
+    display:flex;
+}
+.align-center{
+    align-items: center;
+}
+.margin-center{
+    margin: 0 auto;
+}
+.column-direction{
+    flex-direction: column;
+}
+.top-margin{
+    margin-top: 3em;
+}
+
+/* Styles */
+
+
+.wrapper{
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    font-family: "Libre Franklin", sans-serif;
+}
+.container{
+   width: 50%;
+   gap: 2em;
+}
+
+.heading-container{
+    
+    color: var(--veryDarkBlue)
+}
+.heading{
+    font-size: 2rem;
+    
+}
+.heading-styling{
+    font-weight: 400;
+    color: var(--gray)
+}
+.email-in{
+ width: 70%;
+ padding: .5em;
+ padding-left: 1em;
+ border-radius: 100px;
+ border: 1px solid var(--plaeBlue);
+}
+.cta-button{
+    width: 25%;
+    color:white;
+    background-color: var(--blue);
+    padding: .5em;
+    border-radius: 100px;
+    border: 1px solid var(--plaeBlue);
+    cursor: pointer;
+}
+.cta-button:hover{
+background-color: var(--plaeBlue);
+}
+.footer{
+  
+    align-items: center;
+    gap: 1.5em;
+    color: var(--gray);
+    font-size: .75rem;
+}
+.social-icons{
+    gap: 2em;
+}
+.icon{
+    padding: .5em;
+    border-radius: 1000%;
+    border: 1px solid var(--plaeBlue);
+    color: var(--blue);    
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: var(--blue); }
+
+@media all and (max-width: 900px){
+    .sign-up{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .cta-button{
+        width: 100%;
+    }
+    .email-in{
+        width: 100%;
+    }
+    .container{
+        width: 80%;
+}
+
+}
+@media all and (max-width: 680px){
+    :root{
+        font-size: 15px;
+    }
+  
+}
+@media all and (max-width: 450px){
+    :root{
+        font-size: 13px;
+    }
+}
+@media all and (max-width: 400px){
+ 
+}
